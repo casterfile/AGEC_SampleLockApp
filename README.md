@@ -9,7 +9,7 @@
  This is for rehabilitation of the old people
  
 ## Usage
-The following example demonstrates how to open a file:
+The following example demonstrates how to use the script:
 ```csharp
 public class TestScripte : MonoBehaviour
 {
