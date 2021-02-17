@@ -1,4 +1,4 @@
-# AGEC_LandingPage
+# AGEC_SampleLockApp
  Unity Android Files Opener allows your android application to open files on local drive with (**including API Level 24 or higher**).
  If you encounter a problem on Android Application.OpenUrl does not work, then this will solve your problem!
 
