@@ -12,7 +12,7 @@ public class TestScripte : MonoBehaviour
         if(Global_GamePause.isPause == false)
         {
             //Some Other Script
-            HideObject.SetActive(true);
+            //HideObject.SetActive(true);
         }
         else
         {

@@ -9,6 +9,7 @@ public class Global_GamePause : MonoBehaviour
     
     public GameObject CameraMain; //The main Camera here when implementing this script
     public static bool isPause = false;
+    public GameObject TobeHide;
     // Start is called before the first frame update
     void Awake()
     {
@@ -36,15 +37,17 @@ public class Global_GamePause : MonoBehaviour
 
     }
 
-
+#if UNITY_STANDALONE_WIN
     //Only Works on Android
     void OnApplicationPause(bool _bool)
     {
         if (_bool)
         {
             print("paused");
+            
             CameraMain.GetComponent<Camera>().enabled = false;
             isPause = true;
+            
         }
         else
         {
@@ -53,21 +56,27 @@ public class Global_GamePause : MonoBehaviour
             isPause = false;
         }
     }
+#endif
 
+#if UNITY_ANDROID
     //Work on Windows
     void OnApplicationFocus(bool _bool)
     {
         if (_bool)
         {
             print("resumed");
-            CameraMain.GetComponent<Camera>().enabled = true;
             isPause = false;
+            CameraMain.GetComponent<Camera>().enabled = true;
+            
         }
         else
         {
             print("paused");
-            CameraMain.GetComponent<Camera>().enabled = false;
             isPause = true;
+            CameraMain.GetComponent<Camera>().enabled = false;
+            TobeHide.SetActive(false);
         }
     }
+
+#endif
 }
