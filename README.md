@@ -29,5 +29,19 @@ public class TestScripte : MonoBehaviour
 }
 ```
 
+Using the Launcher:
+```csharp
+public class LauncherApp : MonoBehaviour
+{
+    public string MobileAppID;//com.mobilemobility.agec sample name
+    public string WindowAppID;//Name of the app
+	.
+	..
+	...
+}
+```
+
+
+
 ## License
 This project is licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
