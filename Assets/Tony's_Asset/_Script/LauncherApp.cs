@@ -34,9 +34,9 @@ public class LauncherApp : MonoBehaviour
 
     public string MobileAppID;//com.mobilemobility.agec sample name
     public string WindowAppID;//Name of the app
+    public bool isFaceRecog; // This button will be use for face recognition
 
     public bool isFaceDetectSetting;
-    public bool isFaceRecog;
 
     //private string rootURL = "192.168.254.83/download/";//192.168.254.83 //192.168.1.8
     public void TestOnMouseUp()
@@ -64,7 +64,7 @@ public class LauncherApp : MonoBehaviour
             //Script Located
             WebTextFileChecker textCheker = GameObject.Find("EventController").GetComponent<WebTextFileChecker>();
             //setText
-            StartCoroutine(textCheker.SendToTheServerFaceDetect("0"));
+            StartCoroutine(textCheker.SendToTheServerFaceDetect("1"));
 
             //GetText
             StartCoroutine(textCheker.CheckToTheServerFaceDetect(WebTextFileChecker.rootURL + "samplePHP_Text_FaceDeteckLockApp.txt"));

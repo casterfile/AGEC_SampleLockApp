@@ -35,6 +35,7 @@ public class LauncherApp : MonoBehaviour
 {
     public string MobileAppID;//com.mobilemobility.agec sample name
     public string WindowAppID;//Name of the app
+    public bool isFaceRecog; // This button will be use for face recognition
 	.
 	..
 	...

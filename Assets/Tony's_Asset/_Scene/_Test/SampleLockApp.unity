@@ -425,7 +425,7 @@ MonoBehaviour:
   MobileAppID: com.agec.facedetect
   WindowAppID: faceDetect
   isFaceDetectSetting: 0
-  isFaceRecog: 0
+  isFaceRecog: 1
 --- !u!1 &467568421
 GameObject:
   m_ObjectHideFlags: 0
