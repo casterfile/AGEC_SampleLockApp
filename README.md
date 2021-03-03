@@ -29,7 +29,7 @@ public class TestScripte : MonoBehaviour
 }
 ```
 
-Using the Launcher:
+Using the Launcher: check the button for more info
 ```csharp
 public class LauncherApp : MonoBehaviour
 {
